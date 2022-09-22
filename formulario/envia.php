@@ -11,10 +11,10 @@
         <label for="nome">Nome:</label>
         <input type="text" name="nomeUsuario" id="nome">
         <br>
-        <label for="nome">Idade:</label>
+        <label for="idade">Idade:</label>
         <input type="number" name="idadeUsuario" id="idade">
         <br>
-        <label for="nome">CPF:</label>
+        <label for="cpf">CPF:</label>
         <input type="number" name="cpfUsuario" id="cpf">
         <label for="periodo">Periodo:</label>
         <select name="periodoUsuario" id="periodo">
