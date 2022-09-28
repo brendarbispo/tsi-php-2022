@@ -9,20 +9,29 @@
 /*$hoje = date('w');
 //echo "Hoje é {$diaSemana [$hoje]} ";
 
-$aluno = [0 'matricula' => 1212, 'nome' => 'Brenda',
+$aluno = [0 'matricula' => 1212,
+            'nome' => 'Brenda',
             'semestre' => 2 ];
 
-            var_dump($aluno);
-            */
-            $aluno = [0 => ['matricula' => 0001,
-                         'nome' => 'Brenda',
-                          'semestre' => 2 ],
-                         1 => ['matricula' => 0002,
+  var_dump($aluno);
+*/
+
+$aluno = [
+            0 => [
+                        'matricula' => 0001,
+                        'nome' => 'Brenda',
+                         'semestre' => 2 
+            ], 1 => [
+                        'matricula' => 0002,
                         'nome' => 'Ana',
-                          'semestre' => 4 ],
-                         2 => ['matricula' => 0003,
-                          'nome' => 'Julia',
-                        'semestre' => 3 ]];
+                         'semestre' => 4 
+            ], 2 => [
+                        'matricula' => 0003,
+                         'nome' => 'Julia',
+                        'semestre' => 3 
+            ]
+];
+
 echo '<table>
         <tr>
         <td>Matricula </td>
