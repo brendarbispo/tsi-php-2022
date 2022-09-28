@@ -32,6 +32,8 @@ $aluno = [
             ]
 ];
 
+//criacao do cabeçalho
+
 echo '<table>
         <tr>
         <td>Matricula </td>
@@ -39,6 +41,9 @@ echo '<table>
         <td>Semestre </td>
         </tr>';
 /*
+
+// buscando valores atraves do indice (com rotina FOR)
+
 for ($i = 0; $i < count($aluno); $i++){
     echo " <tr>
 
@@ -50,6 +55,9 @@ for ($i = 0; $i < count($aluno); $i++){
 
 echo '</table>';
 */
+
+
+// buscando valores atraves do indice (com rotina FOREACH)
 
 foreach($aluno as $i => $val ){
        echo "<tr>
