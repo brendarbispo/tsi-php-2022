@@ -13,9 +13,9 @@ $turno = $_POST['turno'];
 $inicio = $_POST['inicio'];
 
 $consulta = $bd->prepare('INSERT INTO alunos
-                    (nome, turno, inicio)
-                VALUES 
-                    (:nome ,:turno, :inicio)');
+                        (nome, turno, inicio)
+                        VALUES 
+                        (:nome ,:turno, :inicio)');
 /*
 o objstmt esta retornando um array que contem um
  pre consulta no banco de dados (sem os dados do usuario)
@@ -48,4 +48,6 @@ os rotulos (ex.: ":nome") pelos dados inseguros
 
  }
 
- //Consulta no banco de dados
+ //Finalmente executamos a consulta no BD
+
+ include 'index.php';
