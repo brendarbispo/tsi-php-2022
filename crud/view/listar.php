@@ -28,7 +28,21 @@
                         </div>';
             } 
         }
+        //mensagem de sucesso ou falha na hora de atualizar o aluno
+        if( isset($atualizar) ){
 
+            if( !$atualizar ){
+
+                echo '  <div class="alert alert-danger" role="alert">
+                            Erro ao tentar atualizar o aluno!
+                        </div>';
+            }else{
+
+                echo '  <div class="alert alert-success" role="alert">
+                            Aluno atualizado com sucesso!
+                        </div>';
+            } 
+        }
         //mensagem de sucesso ou erro na hora de apagar o aluno
         if( isset($apagado) ){
 

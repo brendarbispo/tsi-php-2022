@@ -1,5 +1,5 @@
 <?php
-
+require_once('BancoDeDados/conecta.php');
 ?>
 
 <!DOCTYPE html>
