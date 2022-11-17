@@ -19,8 +19,18 @@ $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $autenticou = false;
 
-if(isset($usuario['nome'])){
+if(isset($usuario['nome'])){// se existir o usuario
 
+    //Comparar a senha p ver se esta correta
+    if(password_verify($senha, $usuario['senha'])){
+        session_start();
+        $_SESSION['id'] = $email;
+       // $autenticou = true;
+        //echo 'Senha valida!';
+        header('Location:/ tsi-php-2202/menu');
+    } else {
+        echo 'Senha invalida :(';
+    }
 }
 
 include 'index.php';
